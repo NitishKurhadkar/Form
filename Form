@@ -1,0 +1,70 @@
+<html>
+<head><title>Registration form</title></head>
+<style> 
+.button_hover:hover{
+         background-color:lightblue;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+  width: 400px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+
+
+</style>
+
+
+
+ <body>
+<form style="background-color:rgb(240, 240, 240);">
+ <fieldset>
+   <h1>Configure your project</h1><br>
+
+    <label for="name"><b>Name</b><br>
+    <input type=text><br>
+    
+    <label for="pack-name"><b>Package Name</b><br>
+    <input type=text><br>
+   
+    <label input="save_location"><b>Save location</b><br>
+    <input type=text><br>
+   
+    <label for="language"><b>Language</b><br>
+    <select>
+         <option value = "Java">Java</option>
+         <option value = "C" >C</option>
+         <option value = "C++">C++<option>
+    </select>
+<hr>
+
+<label for="minimun_API_level">Minimum API level</label><br>
+<select>
+  <option value ="icecream">Ice Cream Sandwich</option>
+  <option value="jellybean">Jelly Bean</option>
+  <option value="lollypop">Lollp Pop</option>
+</select><br>
+
+<label vaule="simpletext">you app will run no approximatively <b>100%</b> devices</label><br>
+  <a href="https://www.w3.org/">Help me choose</a><br> 	
+  <input type="checkbox">This projects willsupport instant apps</input><br>
+  <input type="checkbox">Use AndroidX artifacts</input>
+<hr>
+
+
+
+<input class="button_hover" type="button" value="Previous"></input> 
+<input class="button_hover" type="button" value="Next"></input>
+<input class="button_hover" type="button" value="Cancel"></input>
+<input class="button_hover" type="button" value="Finish"></input>
+</fieldset>
+</form>
+</body>
+</head>
+</html>

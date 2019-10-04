@@ -6,19 +6,17 @@
 
 }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  text-align: right;
-  width: 400px;
-  line-height: 26px;
-  margin-bottom: 10px;
+label{
+
+line-height:40px;
+
+ }
+
+fieldset{
+border:20px
 }
-
-
-
 </style>
+
 
 
 

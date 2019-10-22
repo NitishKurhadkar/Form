@@ -1,0 +1,25 @@
+It is an effect used for diplaying inline containts a badge have appearance related to border style and the background that seperates the containt from the existing text or controls the classes are 
+1) . badge
+2) .badge-pill
+3) .badge-primary
+4) .badge-secondary
+5) .badge-info etc..
+
+Ex:-
+<body> 
+   <div class-="conatiner">
+     <h2>Badge</h2>
+     <button class="btn btn-outlone-primary">Likes<span class="badge badge-danger">4</span>
+     </button>
+     <h2>Products List</h2>
+     <div>
+     <span class="badge bagde-primary">1</span>
+     <span class="badge badge-pill badge-primary">Samsung TV</span>
+     </div>
+     </div>
+   <span class="badge badge-primary">2</span>
+   <span class="badge badge-pill badge-primary">Nike Shoe</span>
+     </div>
+      </div>
+     </body>
+    </html>

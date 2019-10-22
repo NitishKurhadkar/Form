@@ -1,0 +1,620 @@
+ATTRIBUTE SELECTOR
+==================
+
+The attribute Selector are defined with metacharacters to identify black spaces and special characters they are
+1) Tild[~] - It i is used when attribute value is sperated with space. [you can refer multiple value with space
+2) | [pipe]  - It is used when attribute value is septated with hyphen [-]
+
+ex-h2[class~="text-effects"]{
+}
+h2[class]|="text-effects"]{}
+
+Pseudo Selector
+==============
+
+A pseudo Selector is similar to an existing HTML element name but have a different behaviour the commonly used pseudo Selector are defined with existing elements and attributes.
+
+Pseudo              Description
+================================================================================
+
+E:link{}         It defines an anchor element with hyperlink that never visited
+
+E: visited{}     It defines an anchor element with hyperlink which is visited
+
+Ex-
+===
+
+<head>
+<style>
+      a:link{
+              color:green;
+            }
+        a: visited {
+              color:red;
+              }
+</style>
+<body>
+    <a href="demo1.html">Demo1<a>
+    <span></span>
+</body>
+
+Pseudo Selector                Description
+==?===================================================================================================
+: hover     It is used to define effects for any HTML element when mouse pionter is over the element.
+: focus     It specifies the effects to display when element gets focused
+: active    It specifies the effects display when mousepointer hold down
+
+Hover Ex-
+========
+
+<head>
+<style>
+.buttonstyle:hover{
+   background-color: yellow;
+}
+
+img{
+width:50px;
+height:50px;
+transition:2s;
+{
+</style>
+<button class="buttonstyle">Submit
+</button>
+
+Active and focus ex-
+<style>
+   input[iput=text]{
+      background-color:grey;
+      }
+      input [type=text]: focus {
+          background-color:yellow;
+          button {
+              background-aqua;
+              }
+              </style>
+              <body>
+              <div>
+                 <label>Username</label>
+                 <div>
+                   <input type="text">
+                   <button>Submit</button>
+                   </div>
+                   </div>
+                   <body>
+
+Pseudo Selector.                 Description
+======?======?=?================================================================
+:enabled         It specifies the effects to display when element is enabled
+:disabled        It societies the effects to display when element is disabled
+read-only.       It specifies the elements to display when element is read-only.
+
+Ex-
+===
+
+<head>
+<style>
+button: disabled {
+   cursor:not-allowed;
+   background-color:gray;
+   color:white;
+   }
+   input [type=text]: read-only{
+   background-color: light grey;
+   }
+   </style>
+
+
+Pseudo Selector              Description
+===================================================================================
+
+1)                  it defines the degrees to radio or check-box when they are in checked state
+2) : valid  -        It defines the effects to display when the input field is valid
+3) : invalid -      it defines the effects to display when input girls is in valid
+4) : required -     It defines effects to display when input girls have required error.
+
+Ex - Checked
+============
+
+<head>
+<style>
+  input [type=checkbox]~span{
+  color:green;
+  }
+  </style>
+  </head>
+  <body>
+    <div>
+        <label>Terms of Service</label>
+        <div>
+          <textarea rows="4" cols="40">
+          some conditions.....
+          </textarea>
+          </div>
+          <div>
+          <input>
+
+                    
+
+
+HTMl comprises of several child element
+HtMl uses same child element for different elements.
+The Styles You apply to any child element will affect for all different elements
+You can apply affect to any child element only when it it under the given parent by using descendent selector
+
+Syntax
+======
+
+parent > child {
+       attribute:value
+
+example
+=======
+
+<head><title>CSs
+<style>
+ul>li{
+color:red;
+}
+thead>tr{
+    background-color:darkcyan;
+    color:white
+    }
+    tbody>tr{
+    background-color:yellow;
+    color:red;
+    }
+    tfoot>tr>td{
+    text-align: center;
+    }
+    <table cellspacing=
+
+
+address - It is an HTML element used to define the address so that SEO can find your location on maps by using address
+syntax - <address> NareshIT | Hyderabad | 500073
+<br>
+hr@nareshit.in
+</address>
+</code>element
+
+code - It is an HTML element used to embed a code block into the page so that SEO can recognized the code block and complied it in a code simulator
+
+Syntax - <code> var x=10;
+                console.log("x="+x)
+
+acronym - It is an HTML element used to define screen tios so that it is displayed when mouse is over the element or content.
+
+Syntax
+Host sure on
+<acronym title="It resembles both hardware and software. It Satisfies the client request by sending and receiving data">HttpServer<sup>*</sup>
+<acronym>
+
+
+14) list
+It refers to a data list, which contains a set of options that are displayed when user is providing input into the input element
+     A data list can be designed by using the elements
+     a) data list
+     b) option
+EX-
+<body>
+<div align="center">
+<h2> Google </h2>
+<datalist>
+<input type="text" size"40" list="terms">
+<option> Java script example
+<option> HTML example
+</datalist>
+</div>
+</body>
+
+radio button
+1) it is an element that allows the user to choose one or more options
+2) a radio once checked cannot be unchecked hence they are used with mutex mechanism (mutual exclusion)
+3) mutex allows to switch between options i.e. user can choose only one option from a group of choices to define mutex all radios must be specified with a common name radios can be added by using input with your as radio.
+Attributes
+1) id
+2) name
+3) class
+4) value
+5) checked (true/false)
+syntax
+<input type
+
+note - if value is not defined for radio then it submitted on or off
+example
+<body>
+<form>
+<fieldset>
+<legend> choose gender</legend>
+<input type="radio" name="gender" value='female" >female
+</fieldset>
+</br>
+<button> submit </button>
+</form>
+</body>
+
+
+size - it is an attribute used to change the width of input element by specified width the default width is 20
+Syntax -
+<input type="text" name=""txtAge'>
+
+pattern-
+a pattern is used to verify the format of v input value by matching it against regular expression
+the Regular expression area build by using meta characters and quantifier
+
+meta character.                   Description
+===============================================================================================================
+? - it specificy 0 or 1 occurance of any character
+* - it specificy 0or more occurances
++ - it specifies one or more occurance
+\ - It is used to define any individual special character or entity to avoid escape issue ( non printable issue)
+\^ - it defines starts with
+$ - it defines ends with
+w - it specifies a word that preside with alphabet and can contain number or_
+W - it defines a non word which can start with numeric or_and contain alphabet
+d - numeric with decimal
+D - numeric without decimal
+s - space allow
+S - spacer not allow
+[A-Z] - only uppercase allowed
+[a-z] -only lower case allowed
+[A-Za-z] -both
+[a-Z] -both
+[0-9] - numeric
+[a-zA-Z0-9] -alphanumeric
+[a,d,s] -only specified characters allowed
+[^a,d,s] -excluding this characters all characters are allowed
+[a-mA-M4-9] -
+(?=.*[A-Z]) - at least 1 uppercase required
+(?=.*[0-9]) - at least 1 uppercase required
+(?=.*[!@]) - at least one special character
+
+Quantifier
+==========
+
+{n} exactly n - numbers
+{n,m} - minimum n and maximum m
+{n, } - minimum n and maximum any
+
+syntax -
+=======
+
+<input type= "text" name="txtname" pattern="[A-Z]{4,10}"required>
+
+Syntax-
+=======
+
+<input type= "password" name="txtPwd" pattern="[A-Z]{4,10>
+
+<input type= "password" name="txtPwd" pattern="?=.*[!@]\w[!@#$%&]{4,15}>
+
+
+input element-
+=============
+
+we can restrict the value and authorize the value by using various attributes
+
+input attributes -
+1) type- it specificy the data type and restrict the input value to specific type the available input types are text, number, range, color, file, date, year, phone etc.
+syntax - <input type="text">
+                    <input type="password">
+
+Note - the input type can restrict the value by validating the value the types which can validate value are number, email, url and phone
+
+ex - input type to restrict values
+<body>
+<form>
+<fieldset>
+<legend>Validation</legendl>
+<dl>
+<dt>Age</dt>
+<dd>input type="number"</dd>
+<dt>Email</dt>
+<dd>input type="email"</dd>
+<dt>Your website</dt>
+<dd>input type="url"</dd>
+</dl>
+<button>Submit</button>
+
+2) Name  - it defines a reference name for form element it can be common for several element form can submit value of any element only when it is defined with a name
+
+syntax -
+<input type="number" name ="txtAge">
+note - always use camel case for banking elements
+
+3) id - it defines unique reference id for elements which can be used to access the element in script or style
+q<input type="number" name="txt Age" Value="txtAge">
+
+read-only - it is a boolean attributes that can restrict the value from modification i.e you cannot chance the value but can submit the claim value
+
+Note - Every value that you assign to any attributes in element will be string type.
+
+5) Class - it is used to define css class for form element Every element can be defined with multiple classes
+
+Syntax -
+<input type="number" name="txtAge"' class="form-control">
+
+Read-only - Value cannot be modify but can be submitted
+syntax -
+<input type="number" name=""' id="txtAge" value="22" read-oly>
+we
+Disable - it is boolean property used to disable the elementso that it is no longer available and accessable to form however you can enable it dynamically
+
+syntax-
+<input type="number" name=""'.  id="txtAge" value="22" disable>
+
+8) Maxlength and minlength
+min and Max - numeric range content they receive for specifies
+
+<input type="ranger" name="txtPrice"' min="1000" max="50000" >
+
+placeholder - A placeholder is used to display watermark text in a control so that the text will be replaced whenever value is defined.
+
+Autofocus - It set focus to any form element automatically on page load so that user can directly input value you cannot define autofocus for multiple elements in a form
+
+Syntax -
+<input type="text" name="txtName"' autofocus placeholder="any message">
+
+
+elements in <body> section
+html 5 introduce the sementics into the body section to make the contants more SEO friendly.
+The new elements in body section are
+Element.                              Description
+*aside.                   it is a container used to display the information that is not relative to current website
+*article.             it is used to publish information which is related to current website
+*dialog.         it specifies used for interesting with application, which can be turned on our of in page
+*figure.           it defines an area that encapsulates any picture or graphics with a caption
+*figcaption.      it sets caption for picture within figured area
+*header.        it sepcify the contain to display at top margin of page
+*footer.     it specificy the contains to display at bottom margin of page
+*section    it defines the contants between header and footer
+*nav.    it defines the navigation area
+*menu.    it defines the contains for navigation it is a collection of items arranged it according to behaviour
+*div.     it is a container used to define a block of code that load line by line
+*span.    it specificy continuous block of code that load side by side
+
+index <DOCTYPE html>
+<html>
+<head><title>index</title>
+<style>
+header {
+background-color: moron;
+color: white;
+text-align: centre;
+}
+
+aside{
+border-style:dotted;
+width: 200px;
+height: 100 px:
+top
+}
+
+article {}
+section {}
+
+literals in body section
+Html can use various editors for markingup information the containt define in the editor cannot be presented in the browser exactly as defined hence, you need literals like
+
+Literals.                        Presentation
+====?==========?========?==?=?=====
+line break.                <br> or <br />
+black space.            &nsbp
+preformatted text.    <pre>. </pre>
+
+Sharma-Nareshit - web development
+
+
+meta- describes meta data i.e. information about the page  meta is used to make the page more seo friendly
+• meta is mostly used by web-crawlers and spiders to know about your page meta includes the following details
+
+option
+====================================
+• charset - used for designing pageit follows utf standard transformation
+• view port - it defines the behaviour of the page according to the devices i.e. it optimizes to various devices like mobile, tablet, PC etc
+• keywords it specificy the keywords used for searching the page
+• description - it contains the summery of your page contents which is used in seo
+• http-equiv - it specificy the request hatcher and the type used by page
+eg- <DOCTYPE html>
+<html lang=en-IN>
+<head>
+<title>Flipkart|Home</title>
+<link rel="shortcut>
+href="Images/favicon.ico">
+<meta name"width-device>
+<meta name="keywords content="your keyword>
+
+• script - the script element in head section is used to embed client side and server side script into page
+eg - <head>
+<script type="text/JavaScript">
+-----client side-----
+<script runat="server>
+
+stlye - the style element is use dto style embed side into a page which are used to make a page more interactive and responsive
+eg - <head>
+<style type="text/css">
+------stylr-----_
+</style>
+</head>
+
+body - the body I'm the browser work space the tag body defines the body section by using
+bgcolor - section background color
+background - background picture
+text- text color
+vlink - set color for link
+alink - set color for link
+lefmargin -
+rightmargin -
+topmargin -
+bottommargin -
+
+eg- <body bgcolor="green">
+<body background="Images>
+<body vlink="red">
+
+
+elements of documents scope
+a html document comprises of following sections in the document scope
+• head
+• body
+Head section -
+• the head section comprises of information which is loded into memory when a page is requested by client
+• the contents in memory are accessable to the browser as well as to the document loded in browser
+• the commonly used elements in head section are
+1) title
+2) link
+3) meta
+4) script
+5) style
+• the head section is defined by using tag <head> and element in head section doesn't have any order dependency
+• Title - it discribe the title to be displayed in browser title bar
+• link- it is used to link an external file to the html document you can link only non dynamic files such as save icon stylesheet etc.
+• eg-
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<title>Flipkart|Home</title>
+<link rel="shortcut icon" href="Images/favicon.ico"
+<head>
+</html>
+
+creating a Favicon
+• open mspaint
+• set page size to 16x16
+• draw you icon
+• save into your Court software
+
+
+types of elements
+the elements kf html are catogarised into various groups based n their behaviour
+
+element                           Description
+
+normal         A normal element can return a   
+                  presentation directly on call back. In normal element usually comprises of start and end text ex <br>
+
+void.     the term void refers to no return type a void element cannot return presentation directly on call back it usually contains only start tank it is self ending element ex.
+
+rc data element    it is a rich text element used to presenting test it will not allow any ither content within the text
+ex text area
+
+raw text element. - it is an html element presented by using raw text and not by using tag.  ex &# copy
+
+foreign element - it is not a native html element but can be used in html by importing external library ex SVG, MathML
+
+Structure of static documents
+
+a typical ststic element comprises of
+• document declaration
+• document scope
+
+document declaration - it defines the version used for html
+a browser contain parser that translates text into elements
+a parser can handle multiple version of html
+to tell the parser that page is designed using html site we have to make a document declaration <DocType html>
+
+document scope
+every browser can display multiple document simultaneously at the same time
+to define scope of every document we have to use type html
+in html document and it's content is presented by using language standard such as us English, you càn define ghe language used with the help of attribute language
+syntax <html lang="en-IN>
+
+attribute vs property* attributes are associated with tag they used to present an element
+properties are associated with element they are used dynamicly yi ysed in element
+var pic = new image(); \\ property
+<image src =" car.jpg>
+note: every attribute doesn't have relative property for element
+ex table element: no colspan
+table tag : have colspan
+
+
+html presents information by using set of element that are arrange in herracy called dom
+
+
+locate webserver in window
+
+*open window control panel
+*switch to large item
+*administrative tools
+*internet information services manager
+
+A website is a virtual directory on web server that gives acces to the resources present on server technically website is à collection of resources.
+
+creating a new website on local server
+*open iis shortcut run inetmgr
+*expand local computer
+*expand sites folder
+*right click on default website
+*select the option
+*add value directory
+*add folder in directory
+
+web page
+it is a hypertext documents that provides an uset interface which allows the user to access and interact with the resources
+the web page is classified into two tires
+1 - static page
+2 - dynamic pagee
+
+the team syltadyivmvrrfere toncntunool
+
+
+Desktop Application
+web application
+distributed application
+mobile application
+ai application
+gaming apps 2d and 3d
+iot
+
+ui technologies
+software development includes technologies that uses a set of languages, libraries, framework, tools and utilities that are usedto build user interface
+      UI is build for all types of applications, which allow the user to interact with application
+      The various tools used for web related ui technologies are - html, css, client side script, ide's, publishing tools etc.
+
+   web architecture
+
+
+component.  
+html.                   it is a markup language used for presentation
+pob castinga chores to. YouTube 7
+css                         the Cascade stylesheet make page more interactive
+
+client side script.      it reduces the puddle on server by handling the interaction and validation
+
+eg JavaScript, type Script tv
+
+server side script- it is a script employed on server to generate a responsed customizer for every client request jsp it's used to msg it f can't be of trees 7
+
+document mbbg ft
+middle of nowhere ll
+üd
+web terminolog exk9
+
+web application
+===============
+a web application allows user interaction the for every client request wwe.irtc.gov.in
+
+blogs
+======
+
+blogs are journals it ussually but api is service provided by any party source which you can integrate from another application
+capture maps
+
+web debugger
+============
+
+it is a software tool used by in the web development for tracking and fixing the bugs
+every browser have a debugget which can be invoked by pressing f12 function key
+eg fiddler
+
+diff between url and uri
+========================
+
+uniform resource identifyer
+===========================
+
+the uniform resource locator(url) is a virtual path generated by web server in order to access the resources of any website or application
+the uniform resource identify is a portion of url that defines a named location in the resource
+
+Protocol - a protocol defines set of rules that are followed by computers in a network to communicate with each other various network use different protocols like,.m http,https,ftp,tcp/ih6y ki udß747y
+

@@ -1,0 +1,168 @@
+Minification of CSS
+===================
+
+1)It is a technique which is used to redue the size of CSS file by removing line breaks, blank spaces and optional code
+
+2)Minification aloows the file to compress size without affecting the funcionality
+
+3) You can minify the CSS file by following tools Smalify, CssMinifier, AjaxMinifier etc.
+
+ex-
+---
+1) Add a new Css file into "Styles" folder by name "effects.css"
+
+h2
+{
+   background-color:red;
+   color:white;
+   text-align:center
+}
+
+2)Copy the CSSS code and Paste in the website "http://cssminifier.com"
+
+3) Click "Minify" button, it will generate the following code:
+
+h2
+{
+ background-color:red;color:#fff;text-align:center
+}
+
+4) Add a new file into "Styles" folder by name "effects.min.css"
+  and paste the minified code
+
+5) Link Minified file to page.
+
+<link rel="stylesheet"
+href="Styles/effects.min.css">
+
+
+FAQ's
+=====
+
+1) Can you edit the minified file?
+A. Yes
+
+2) When to use minified and when unvompressed?
+A. Always use 
+          minified in production
+          uncompressed in development
+
+3) Why not minified in Development?
+A. It cannot tracck the error location
+
+
+CSS from CDN
+=============
+
+Css file cam gr locally in a website or they can be access remotly from external servers knoqn a CDN 9Cintaint distribution network
+
+ex:-
+---
+1) create a new website [Virtual DIrecctory] of IIS - by name "CDN" with path "C:\CDN"
+
+2) Open Notepad amd type the following
+
+     h2
+         {
+              background-color:red;
+              color:white;
+              text-align:center;
+         }
+
+3) Save into CDN folder by name "effects.css"
+4) Link to your webpage
+
+<link rel="stylesheet"
+href="http://localhpst/cdn/effects.css">
+
+
+Inline Style Syntax:-
+====================
+
+   In Inline technique you have to define style attributr and valus by using the attribute style.
+
+  Syntax :-
+  -------SSSSSSSS
+
+<div style="attribute1:value;attributr2:value"</div>
+
+Embeded and CSS style Syntax
+============================
+
+In this technique the style attributes and their values are defined by using "{}" the styles are appliedto elements based on selectors.
+
+Syntax:-
+  
+    selector
+           {
+                attribute1:value;
+                attribute2:value;
+            }
+
+
+Types of selectors in CSS nd embeded:
+
+1) Type selector specifies the tag name where the given styles are applied .
+
+2) It refers to every tag thatb occurs in the page and matches with the selector.
+
+3) You cannot ignore the style for any specific occurance.
+
+ex- 
+  <head>
+  <style>
+      h2,p{
+   	    background-clor:yellow;
+            color:red;
+            text-align:center;
+           }
+  </style>
+  </hed>
+  <body>
+     <h2>HTML</h2>
+     <p> Some text...</p>
+  </body>
+
+
+ID selector
+===========
+
+1) An ID selector is defined with symbol "#" and contains set of attribute which you can access by refering the id with a ID attribute.
+
+2) Every element can refer to only one set of attribute using ID.
+
+ex-
+---
+#effects{
+           background-color:yellow;
+           color:red;
+           text-align:center;
+         }
+</style>
+<head>
+<body>
+    <h2 id="effects"> HTML </h2>
+    <p id="effects"> SOme TExt....</p>
+</body>
+
+
+Class Selector
+=============
+
+1) It is defined by using ".classname", which encapsulates the set of attribues which you can acces by using class attribute.
+
+2) A single HTML elements can implement multiple classes
+  <style>
+     .backEffetcs
+       {
+          bckground-color:yellow;
+       }
+     .textEffects
+            {
+              color:red;
+              text-align:center;
+            }
+     </style>
+     <head>
+     <body>
+        <h2 class="backEffects textEffects"

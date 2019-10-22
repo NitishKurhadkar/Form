@@ -1,0 +1,239 @@
+Flash
+=====
+
+1)layers are used to seperte the componenets in a frame
+2) Timeline allows to configure the animation frames
+3) ToolBox contains set of tools used for drawing and editing images
+4) Library comprises of a set of resources that are used to insert and configure in projects
+5) Stage is a location where entire animation is designed
+
+Banners for webpage
+===================
+
+A webpage can be defined with following typpes of banners 
+
+Type                                       Size (in pixels)
+==========================================================================================================
+xx
+LeaderBoard                                      728x90
+HalfPage                                         300x600
+Medium Rectangle                                 300x250
+Large Rectangle                                  336x280
+
+
+Flash TOols in ToolBox
+
+Tool 					Desscriptiion
+=========================================================================================
+Select			      Selcects an object for moove, delete.
+
+Subselection		      Selects node to reshape the object.
+
+Free Transform                TO rezie and rotate
+
+GradiantTransform             Fills gradient colors.
+
+Line   			      Draws straight line
+
+Pen        		      Draws by joining end points	
+
+Text                          Insert and modify text
+
+
+Layers in flash
+============================================================
+The objects on stage are encapsuated into one object while animation and editing
+- You have to maintain layers for every object
+- In the layers panelclick[+] Add Laer button
+- In the layera panel click on LayerName to rename.
+- Draw our object in different laerys seperated from each other 
+
+
+Frames 
+======
+
+insert static framw using f5. It contains object without animation
+insert key frame using f6.  It conatin object with animation.
+
+
+Flash Animations:-
+==================
+
+1) Frame by Frame Animation 
+===========================
+
+* Create a new "flash DOcuments"
+* Right click on stage and select "Properties"
+*         [Documents Properties]
+Title	: LeaderBoard
+Description	:	Banner Ad
+Dimension	: 728x90
+Match		: Default
+Background Color : White
+Frame Rate	 : 25 fps
+Ruler Units	 : Pixels
+
+3) Rename Layer1 : Oval
+4) Draw an Oval in oval layer : Delete fill color
+5) upto 10 frames press "F5" for oval
+6) Insert a new layer and rename as "Text"
+7) Add Text into layer "Welcome"
+8) Press "F6" to insert key frame. [Frame2]
+9) Change size of text or rotate in Frame2
+10) Press "F6" to insert key frane and change again its size or Postion.
+11) Repeat until frame 10.
+
+
+	Test : Enter to rune one
+		Ctrl+Enter - Repeat Animation
+
+
+Twining Animation
+=================
+
+1) It is the process of creating animation by configuring the end points the animation for frames in between is automatically created.
+2) The Twining animation are catogarized into two types.
+a) Motion Tween b) Shape Tween
+
+Motion Twin 
+===========
+
+In this animation the object is configured at different end points and by changing the positin or orientation itis related to the placement and movement of object
+
+Ex - 
+---
+
+1) Draw the Object in frame1
+2) choose frame25 from timeline and F6
+3) Select all frames from 1 to 25
+4) Right click on selected frames 
+5) choose the option "Create motion Tween"
+6) Insert keyframes in between at 10, 15, 20 and change the position or size of your object at every key frame.
+
+
+Creating Scene
+==============
+
+1) A flash movie comprises of multiple scene 
+2) The movie changes from one scene to another 
+3) You can create animation between scenes
+
+Ex- 
+---
+
+1) Create new flash project 
+2) By defaut you are in scene-1
+3) raw and Animate in Scene1
+4) Goto->Insert-> Scene
+5) Continue our animation in scene2
+ you can add new object and change posiotion in scene2
+6) You can change between scenes by using View Scene option in TimeLine.
+
+Symbols in flash
+================
+
+ A Symbol comprises of animation which you can store in librabr and used in any scene. Flash support three type of symbol: -
+a) Movie Symbol  b) Graphic Symbol  c) Button symbol
+
+
+Creating a movie symbol:
+========================
+
+a) Goto "Insert Menu"
+2) Select "Symbol"
+3) Choose "Movie Symbol"
+4) Name it : Man
+5) Create animation frame by frame using any object.
+6) Symbol is stored in Librabry Panel, which you can drag and drop into movie.
+
+
+
+Masking
+=======
+1) It is a process of hiding the existing layers with a new layer so that the object in new layer can mask the containts.
+2) You can using masking with images and auto shapes 
+Ex
+---
+     1) Add an image in layer 1
+     2) Add a shape [oval] in layer- 2
+     3) Set Static frame for image upto 70.
+     4) Set Keyframe for ovl upto 70
+     5) Change the size of ovl from 1 to 70 by using Motion-Tween
+     6) Right clicck on layer 2[Oval] and select the option "mask"
+
+Adding motion guide
+===================
+1) In motion guides allows to define a specific path for any moving object in the stage 
+2) The Motion Guide should define a start and end point 
+
+Ex-
+---
+1) Add an object in layer 1 at fraame 1
+2) right click on layer1 and select "Add Motion Guide"
+3) Add a new object in motion layer, which specifies the path  to traveel.
+4) Animate object in layer1 by using "Motion Tween"
+5) Keep the object at start point of motion path at last frame.
+
+Note: Open the property panel below stage in order to set path animation it includes 
+       1) Rotate
+       2) Orient to Path
+       3) Sync
+       4) Snap
+
+Chnaging Brightness or Alpha effectes
+=====================================
+
+
+1) Import new picture from librabry
+      FIle -> Import to library
+2) Right click on picture and select "Convert To symbol"
+3) Choose as "Movie" Symbol
+4) Open Preferences [Bottom of stage]
+5) Select Color Options:
+           Brightness
+           Alpha etc..
+
+
+Shape Tweening
+==============
+1) Drop an obect at frame1
+2) right click at the frame 30 and insert blank key frame
+3) Draw new object at blank frame
+4) Select all frame from 1 to 30
+5) Goto Prefrences panel and select
+       Tween : Shape
+
+Add audio
+2) Select
+
+
+Exporting Flash Animations for HTML:
+===================================
+1) Save the flash animation file
+   File ->Save-> "LargeRectangle.fla"
+
+2) Goto "File Menu -> Export -> Movie"
+
+3) Select location and specify name "LargeRectangle.swf"
+
+4) Embed into the HTML file
+
+<aside>
+ <embed src="Ads/LargeRectangle.swf" height="280" width="335">
+<aside>
+
+
+Step 1 create new projecct
+step 2 - set stage size : 336x280
+step Add layers 
+    - Offer
+    - Hurry
+    - TitleBottom
+    - Oval
+    - Banner
+
+Step 4 Add picture in a banner layer and set size 336x 280
+setp 5 - Add Oval in Oval Layer
+Step 6 - Add Text in title
+  "Bank Offers:SBI, HDFC 30%"
+    - Hurry						/./	

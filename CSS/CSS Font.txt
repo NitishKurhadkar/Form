@@ -1,0 +1,31 @@
+CSS Fonts
+===========
+
+1) font family = it defines a font family that comprises a set of font, which can change the text appearnce
+
+2) font-size = It defines the font-size, it p text appearnce font size it defines the font size in pixels, em and percent.The default font size is 16 pixel = 1 em.
+
+3) font-weight = Insert font weight to bold and strong 
+
+4) font-style = insert the font size to etlic or empharsize
+
+5) font-varient - it changes the font capitalization i.e small Caps.
+
+
+
+Ex:-
+  <body>
+     <dl>
+        <dt>Font size</dt>
+        <dd>
+           <div style="font-size:20 px;">Size in Pixels</div>
+           <div style="font-size:1.5 em">Size in Em</div>
+        </dd>
+        <dt>Font Weight</dt>
+        <dd style="fonr-style:italic;font-weight:bolder;">Bold</dd>
+        <dt>Font Varint</dt>
+        <dd style="font-varient: small-caps;">Upper Case</dd>
+        <dd style="text-transform:uppercase;">Upper Case</dd>
+      </dl>
+</body> 
+             

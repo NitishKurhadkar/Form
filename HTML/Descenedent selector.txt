@@ -1,0 +1,138 @@
+Descenedent selector
+====================
+
+1) HTML comprises of several child element 
+2) HTML uses same child elemet for different elemets
+3) The styles you apply to any child element will affect for all different elements
+4) You can apply to any child element will affect for all different element only when it is under the given parent by using descendent selector
+
+Syntax
+  parent> child {
+           attribute:value
+
+
+examle
+<head><title>>CSS</head></title>
+<style>
+ul>li{
+color:red;
+}
+thead>tr{
+   background-color:darkcyan;
+   color:white
+}tbody>tr{
+   background-color:yellow;
+   color:red;
+   }
+   tfoot>tr>td{
+    text-align:center;
+}
+
+Attribute Selector
+=====================
+
+
+HTML provide several elements that are presented by using attributes of any specified tags hence the effects are applied based on attribute and value.
+
+Syntax:-
+-------
+
+   TagName[Attribute=value]
+      {
+        
+            styleAttribute:value;
+      }
+
+Ex:-
+    <head>
+      <style>
+          dt{
+               font-weight:bold;
+             }
+              input[type=button]
+                {
+                  background-color:yellow;
+                 }
+                 input[type=text]
+                      border-style:solid;
+                      border-width: 2px;
+                      border-color:red;
+                
+        </style>
+       </head>
+       <body>
+          <form>
+           <dl>
+              <dt>First Name</dt>
+              <dd><input type="text"></dd>
+              <dt>Last Name</dt>
+              <dd><input type="text"></dd>
+            </dl>
+          <input type="button" value="submit">
+          <input type="button" value ="Reset">
+</form>
+</body>
+    <body> </body>
+
+
+CSS 3 and CSS5
+===============
+
+The lastest version of CSS provide advance selector that allow to select elements based on substring matching, structural reference, UI element state etc.
+
+The selectors are catogarized into several groups.
+1) Substring Selectors
+2) Structural Selectors
+3) State Selectors
+4) Root Selector
+5) Negation Selector
+6) Sibling/ Decedent 
+
+Substing Selectors
+==================
+
+
+Selector           Pattern       Description
+=====================================================================================================================
+Substring       E[attr=val]      It will apply effects to the element whose attribute is exactly matching with value  
+matching        
+
+
+
+Substring 
+start with     E[attr^=val}      It applies effeects to the element whose attribute is satrting with specified value
+
+Substring      E[attr$=val]      It applies effects to the element whoes attribute ending with specified value
+
+Substring      E[attr*=val]      It applies effects to the element whose attribute contains given value
+contains 
+value
+Endwith
+
+
+Ex-
+ <head>
+   <style>
+    h2[class*="JS"]{
+       background-color:darkcyan;
+       color:white;
+      }
+      h2[class^=text"text"]{
+         background-color:green;
+         color:white;
+       }
+       h2[class$="back"]
+         {
+            background-color:red;
+            color:white;
+         }
+     </style>
+     </head>
+     <body>
+        <h2 class="text">Welcome</h2>
+        <h2 class="textHTML">HTML</h2>
+        <h2 class="textCSS">CSS</h2>
+        <h2 class="Jsback">JavaScript</h2>
+        <h2 class="textHTML">JavaScript Advance</h2>/                                                                                       
+         <h2 class="codeJsAdv">Core and Advance>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         

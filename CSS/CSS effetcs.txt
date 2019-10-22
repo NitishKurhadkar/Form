@@ -1,0 +1,133 @@
+CSS Effects:-
+===========
+
+1)CSS Background:-
+=================
+
+* background-color
+* background-image
+* background-position
+* background-size
+* background-repeat
+* background-origin
+
+
+* background-clip
+* background-attachment
+
+
+1)Background Color:- It sets a  background color for any html element
+
+Ex:-
+===
+
+body{
+      background-color:yellow;
+    }
+
+Bckground Image:- It set a background picture for any HTML element.
+
+Ex- 
+===
+body{
+      background-image:url("../Images/3.jpg)";
+    }
+
+
+Background Repeat:-
+==================
+It defines repeat images
+
+
+a) repeat
+b) no-repeat
+c) repeat-x
+d) repeat-y
+
+Ex-
+===
+body{
+ background-image:url("..Images/3.jpg");
+ background-repeat:no-repeat;
+}                                                                                                                                                                                                                            
+
+
+Background Position:-
+===================
+
+It sets a background position for image which includes presets like 
+
+* left top
+* left center
+* left bottom
+* right top
+* right center
+* right bottom
+* center top
+* center center
+* center bottom
+
+You can also define a position based on x and y axis
+
+Ex:-
+====
+body{
+  background-image:url("..Images/3.jppg");
+  background-repeat:repeat:no-repeat;
+  background-position:center center;
+}
+	or
+background-position-x:100px;
+background-position-y:200px;
+	or
+background-position:100% 200%;
+
+Background Attachment:-
+=====================
+
+It sets the position and attacthment of background which allows to lock the scrolling the background image by defining the fixed 
+
+Ex:-
+===
+body{
+   background-image:url("..Images/backgif.png");
+   background-repeat:no-repeat;
+   background-attachment:fixed;
+
+Backgound Origin
+=================
+It set the background position for image that can be start from the containt or the margin it uses various effects which includes 
+
+a) padding-box
+b) border-box
+c) content-box
+d) initial
+
+ex:-
+===
+
+div{
+    backgound-image:url("..Images/backgif.png");
+    border:2px solid;
+    padding:50 px;
+    background-repeat: no-repeat;
+    background-origin:content-box;
+   }
+
+background Clipping:-
+====================
+
+It set the background releated to the containt-box or padding-box. It  can use the effects of
+
+a) content-box
+b) border-box
+c) padding-box
+
+Ex:-
+====
+div{
+  backgoud-color:yellow;
+  background-clip:border-box;
+  border: 20x solid;
+  padding:50;
+}

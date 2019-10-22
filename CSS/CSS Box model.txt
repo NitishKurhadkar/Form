@@ -1,0 +1,75 @@
+CSS Box model
+
+The box model is a combination of height, with, padding, margin and border.
+
+Ex:-
+===
+
+<head>
+<style>
+   <aside>
+       border: 10px double red;
+       margin:50px 150px;
+       padding-left:50px;
+       padding-right:40px;
+       padding-top:10 px;
+       text-align:justify;
+   </aside>	
+
+
+Box model design for page
+=========================
+
+Ex:-
+====
+
+<head>
+   <style>
+header{
+            widh:1024;
+            height:00px;
+            border:green 5px solid;
+}
+footer{
+          widt:1024px;
+           height:100px
+          bprder green 5px solid;
+}
+
+section{
+    width:1024px;
+    height:300px;
+    border:blue 5px solid;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+<aside>
+  width:50px;
+  height:50px;
+  border:blue solid 2px;
+  margin-left:100px;
+}
+
+artical{
+   width:50px;
+   height:50px;
+   border:blue solid 2px;
+   margin-left: 100px;
+   margin-top:10px;
+}
+</style>
+</head>
+<body>
+ <header>
+   <h2>Header</h2>
+  </header>
+  <section>
+   <h2>Section</h2>
+   <aside>Ads here..</aside>
+   <artical>Offers..</artical>
+</section>
+<footer> 
+  <h2>Footer</h2>
+</footer>
+</body>

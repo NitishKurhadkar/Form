@@ -1,0 +1,55 @@
+Progrss Element
+
+1) A HTML page can use AJax to hande partial psot back.
+2) It can use partial post back that loads new containt into page without reloading complete page
+3) Progress element  isusedd to show status f every asynchronuos tast performed within pagelikedownloading, uploading, installing, copying etc.
+
+Properties:-
+1) ID
+2) name 
+3) class
+4) value
+5) min 
+6) max
+
+Syntax :-
+
+<progress min="" max="" value=""
+
+Example :-
+<body>
+<fieldset>
+	<legend>Downloading</legend>
+	<div>
+		<progress></progress>Preparing for Download
+	</div>
+	<div>
+		<progress min="1" max="100" value="20"></progress>20% Download Complete
+	</div>
+	<div>
+		<progress min="1" max="100" value="80"></progress>80% Download Complete
+	</div>
+    <div>
+		<progress min="1" max="100" value="100"></progress>100% Download Complete
+	</div>
+</fieldset>
+</body>
+                
+                
+Meter Element:-
+The Meter element is used to display a great meter, which can show the range of values graphically usinng colors it is mostly used in showing reviews and upgrades in a website
+
+Properties:-
+1) ID
+2) Name
+3) value
+4) min - must be above min and below hgh
+5) max - must be below high and above min
+6) low
+7) class
+
+
+Syntx :-
+<meter min="" max="" value="" low="" high="" =""></meter>
+
+Example :-

@@ -1,0 +1,23 @@
+Marquee:-
+ It is an HTML element used to set sliding and scrolling containts in a page.
+
+Properties:-
+
+Property				 Description
+=========================================================================================================
+
+1) Direction               It defines the marquee scrolling direction to left, right, up or down
+
+2) behaviour 		   It sets an alternate behaviour that is use to change from scrolling to sliding
+
+3) Scrollamount            It defines the marquee scrolling speed between 1 to 100
+
+4) bgcolor                 It sets a background color for marquee
+
+5) width and height        It changes the width and height while specified pixels
+
+6) loop			   It specifies the number of time the marquee containt have to display
+
+
+Syntax:-
+<marquee direction="right" scrollamount="10" bgcolor="yellow" width="400" height="70" loop="3"></marquee>

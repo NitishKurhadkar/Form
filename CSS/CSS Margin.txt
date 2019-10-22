@@ -1,0 +1,48 @@
+CSS Margins:-
+============
+  Margin specifies the distant betwwween browsser window and element in pitch. You can define the margin along x and y axis by using the preset
+
+a) margin-left
+b) margin-right
+c) margin-top
+d) margin-bottom
+
+Padding define the space between containt and border you caan configure the presets 2which includes
+a)padding-left
+b) padding-right
+c)paddting-top
+d)padding-bottom
+
+ex:-
+==
+
+<style>
+<head
+p{
+   border: 10px double red;
+   margin:50px 150px;
+   padding-left:50px;
+
+   padding-right:40px;
+   padding-top:10 px;
+   text-align:justify;
+}
+<//style>
+</head
+<body>
+   <p>Some text</p>
+</body?>
+
+
+width and height
+===============
+
+This are the attributs used to define width and height b specified pixel or percent.
+
+Synntax:
+  div{
+         width:100px;
+         height:200px;
+      }
+
+

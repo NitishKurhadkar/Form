@@ -1,0 +1,114 @@
+Types of selectors
+
+first-of-type
+=============
+
+
+last-of-type
+============
+
+
+only-of-Type
+============
+It is a selector used to apply effects to any element if it is preesent as a child element of any parent element it must be the only element of specific parent 
+element and the occurance must be only one.
+
+Ex:-
+====
+<body>
+<head>
+<style>
+     p:only-of-type{
+         background-color:yellow;
+      }
+</style>
+</head>
+<body>
+<div>
+   <p>Paragraph1</p>
+</div>
+<div>
+   <p>Paragraph-2</p>
+   <p>Paragraph-3</p>
+</div>
+</body>
+</html>
+
+
+
+only-child:-
+===========
+
+it applies only to the element if it is only child of parent of element  i.e. no other elements are present inside the parent element 
+
+Ex:-
+====
+
+<body>
+<head>
+<style>
+     p:only-child{
+         background-color:yellow;
+      }
+</style>
+</head>
+<body>
+<div>
+   <p>Paragraph1</p>
+</div>
+<div>
+   <p>Paragraph-2</p>
+   <p>Paragraph-3</p>
+</div>
+</body>
+</html>
+
+nth child:-
+===========
+It applies effects to the element based on the level number or occurance number of given element within any parent element.
+
+Ex:-
+====
+
+<body>
+<head>
+<style>
+     p:nth-child(2){
+         background-color:yellow;
+      }
+</style>
+</head>
+<body>
+<div>
+   <p>Paragraph-1</p>
+   <p>Paragraph-2</p>
+   <p>Paragraph-3</p>
+</div>
+</body>
+</html>
+
+
+nth-last-child():-
+================
+It applies effects to the element based on the level number from the bottom of the list.
+
+Ex:-
+===
+
+<body>
+<head>
+<style>
+     p:nth-last-child(2){
+         background-color:yellow;
+      }
+</style>
+</head>
+<body>
+<div>
+   <p>Paragraph-1</p>
+   <p>Paragraph-2</p>
+   <p>Paragraph-3</p>
+   <p>Paragraph-4</p>
+</div>
+</body>
+</html>

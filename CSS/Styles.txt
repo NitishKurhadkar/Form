@@ -1,0 +1,33 @@
+1) Styles are the set of attributes defined for HTML elements to make them more interactive and responsible 
+2) Styles can be defined in 3 ways 
+   a) Inline - In this technique the styles are defined for every tag individually by using "style" attribute this styles are not accessable to other tags in page.             
+          
+         Ex - <h2 style="background-color:red; color:white; text-align:center"> </h2>                       
+          
+   
+   b) Embeded - In this technique you can embeded the style in a page by using style element so that styles are accesible to other elements within the page howerever, embeded styles are not accessible to elements in other pages
+   
+        ex - <style>
+                h2{
+                     background-color:red;
+                     color:white;
+                     text-align:center;
+                   }
+                 </style>
+
+   c) CSS ( Cascade Style Sheet ) - In this technique the styles are defined in a seperate style sheet so that it can be linked to any page and the style are accisible to elements accross pages however, this will increase the no of request to page and will increase the load time.
+
+       ex-  1) Add a new folderinto your a project
+            2) Add a file namd elements.css
+            3) Now, Add this code
+                  <head> 
+                      <link rel="stylesheet" href="../styles/elements.css">
+                  </head>
+                      <body>
+                	    h2{
+                        	background-color:red;
+                         	color:white;
+                                text-align:center;
+                       	      }
+                       </body>    
+                   

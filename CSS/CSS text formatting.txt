@@ -1,0 +1,82 @@
+CSS Text Formatting
+===================
+
+Text formatting includes changing of characrter appearance and its orientation the css properties used for text formatting are :-
+
+Property                                Description
+================================================================================================================================
+
+1) Color                            It sets a color for text
+
+2) Direction                        It defines the writing direction for text i.e. RTF(right to left) or LTF(left to right)
+
+3) letter-spacing                   It is used to set space.
+
+4) word-spacing                     It is used to set spaccing between wors in a paragraph.
+
+5)line-height                       It set space between letters.
+
+6) text-align                       It align text to center, left, right jusified horizontally
+
+7) text-decoration                  It defines the effects for text which includes underline, strikeout etc
+
+8) text-indent                      It specifies the first line line indent for paragraph.
+
+9) text-transform                   It sets capitalization for text i.e. upeercase, lowercase etc.
+
+10) Text-shadow                     It defines a shadow for text.
+
+11) whitespace                      It set space for elements that contains text
+
+12) text-overflow                   It controls the overflow of text when defined in a border.
+
+13) vertical-align                  It specifies the vertical alignment i.e. Top, Center, bottom within the parent element.
+
+Ex:-
+<head>
+  <style>
+      dt{
+            font-weight:bold;
+         }
+</style>
+ </head>
+    <body>
+       <dl>
+          <dt>Color</dt>
+          <dd style-"color:blue">CSS Color</dd>
+          <dt>Direction</dt>
+           <dd style="direction:rtl;">Right to Left Orientation</dd>
+               <dt>Letter Spacing</dt>
+               <dd style="letter-spacing:10px;">Spacing Between Letters</dd>
+               <dt>Word Spacing</dt>
+               <dd style="word-spacing:20px;">Space Between Words</dd>
+               <dt>Line Spacing[height]</dt>
+               <dd style="line-height:40px;">
+                  First Line<br>
+                  Second Line</dd>
+               <dt>Text Align[center]</dt>
+               <dd style="text-align:cenetr">Ceneter</dd>
+               <dt>Text Decoration</dt>
+               <dd style="text-align:cenetr">Ceneter</dd>
+               <dt>Text Indet</dt>
+               <dd style="text-align:justify;text-indent:130px; margin-left:100px;margin-right:100px;">
+                    some paragraph....
+               </dd>
+               <dt>Text Tranform</dt>
+               <dd style="text-transform:uppercase;">UpperCase Letters</dd>
+               <dt>Text Shadow</dt>
+               <dd>
+                     <h1 style="text-shdow:lightpink 6px 1 px;">Shadow</h1>
+               </dd>
+               <dt>Text Overflow</dt>
+               <dd style="border:solid 2px red; width:80 px; text-overflow:elllipsis; wprd-wrap:break-word;">
+         Text Overflow
+</dd>
+<dl>
+</body>
+
+ex:- Overflow with hidden
+
+<dd style="border:solid 2px red; width: 80px; text-overflow:ellipsis; white-space;nowrap; overflow; hidden;">
+             Text Overflow
+</dd>

@@ -1,0 +1,67 @@
+Inline Form:-
+============
+
+Ex:-
+===
+
+<html>
+<head>
+<body>
+  <div class="container">
+    <h2>Inline Form</h2>
+    <form class="form-inline">
+     <div class="form-row">
+       <div class="col">
+         <input class="form-control" type="text" placeholder="username">
+     </div>
+     <div class-"col">
+       <input class="form-control" type"passsword" placeholder="Password">
+      </div>
+      <div class="col">
+        <button class="btn btn-primary">Login</button>
+      </div>
+      </div>
+     </form>
+    </div>
+   </body>
+
+Bootstrap Input Group
+=====================
+
+The Bootstrap input group allows group of set of elements into one category and align in coloumn the group is displayed as toolbar with collection of element the classes are:-
+
+1) .input-group
+2) .input-group-sm
+3) .input-group-lg
+4) .input-group-text
+5) .input-group-prepend
+6) .input-group-append
+
+
+Ex:-
+  <body>
+    <div class="container">
+      <h2>Register User</h2>
+      <form>
+         <div class="form-group">
+           <label>Email</label>
+           <div class="input-group">
+           <input type="text" class="form-control">
+              <div class="input-group-append">
+               <span class="input-grou-text">
+             @gmail.com<\span>
+             </div>
+            </div>
+           </div>
+           <div class="form-group">
+              <label>Website Page Address</label>
+              <div class="input-group">
+                 <div class="input-group-prepend">
+                  <sapn class="input-group-text">
+                  http://ww.blogger.com/</span>
+                  </div>
+                 </div>
+                </div>
+                </form>
+               </div>
+              </body> 

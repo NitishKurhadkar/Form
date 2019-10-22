@@ -1,0 +1,7 @@
+Images can be defined by using pre-defined image classes they are 
+1) img-fluid 
+2) img-thumbnail
+
+Syntax:-
+
+   <img class="img-fluid imgthumbnail" src="../Images/tv.jpg">

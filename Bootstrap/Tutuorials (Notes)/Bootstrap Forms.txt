@@ -1,0 +1,65 @@
+Bootstrap Forms
+
+Bootstrap provides set of class that are used to present form and text elements with pre-defined effects the commonly used are:-
+
+1) form-group
+
+2) form-control
+
+3) form-row
+
+4) form-input
+
+5) form-text
+
+6) form-input-range
+
+7) form-input-file
+
+8) form-input-check
+
+9) form-check
+
+10) form-check-inline
+
+Ex:-
+<head>
+ <!-- link bootstrap.css-->
+</head>
+<body>
+   <div class="container">
+     <form style="width:200px">
+       <h2>Register User</h2>
+       <div class="form-group">
+          <labe>User Name</label>
+           <div>
+          <input type="text" class="form-control">
+          <span class="form-text text-danger">Name Required</span>
+          </div>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <div>
+              <input type="password" class="form-control">
+            </div>
+            </div>
+            <div class="form-group">
+               <label>Gender</label>
+             <div>
+               <select class="form-control">
+                 <option>Choose Gender</option>
+                 <option>Male</option>
+                 <option>Female</option>
+
+               </select>
+               </div>
+               </div>
+               <div class="fprm-group text-center">
+                 <input type="checkbox" class="form-check-inline"><label class="form-check-label">Accept Terms</label>
+                 </div>
+                  <div class="form-group">
+                   <button class=btn btn-primary btn-block">Register</button>
+          </ div>
+   </form
+    </div>
+        </body>

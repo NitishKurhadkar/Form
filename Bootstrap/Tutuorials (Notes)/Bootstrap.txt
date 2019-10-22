@@ -1,0 +1,68 @@
+  Bootstrap
+ ===========
+
+1) Bootstrap is one of the worlds largest repository of HTML, CSS and javascript
+
+2) Bootstrap provides a set of templates that  allow to design any application by implementing pre-defined styles.
+
+3) Bootstrap have open ssource library that allows to customize according to the requirements.
+
+Installing Bootstrap
+====================
+
+1) Open your projectin VS code
+
+2) open command terminal by using  Ctrl + ` (Backtick)
+
+
+3) Type the following command in terminal 
+  
+   C:\Flipkart>npm install Bootstrap
+
+4) This will add few folder into project by name  "node_modules"
+
+5) The location of bootstrap core CSS file is node_modules
+   
+  !__bootstrap
+   !__dist
+    !__css
+     !__bootstrap.css
+       bootstrap.min.css  
+
+Implementing Bootstrap in a webpage
+===================================
+
+1) Add a new HTMl file by name ".login.html"
+
+<html> 
+    <head><title>login page</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+         .container{
+                         width: 200px;
+         }
+   </style>
+   </head>
+    <body>
+        
+        <div class="container">
+                <h2>login</h2>
+                <div class="form-group">
+                
+            <label for="uid">user id:</label>
+        </div>
+        <div>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="pass">Password</label>
+                <div>
+            <input type="password" class="="form-control>
+        </div>
+        </div>   
+        <div class="form-group">
+            <button class="btn btn-promary btn-b;;ock">Submit</button><br>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,248 @@
+ Bootstrap Grid Layout
+=====================
+
+Bootstrap provides set of classes taht are responsible for defining grid system which makes the sysytem responsive according to the target devices the classes are:-
+
+Class Name				Description
+===========================================================================================
+
+.col				Screen width for less than 576 px
+
+.col-sm				small devices where width greather than or equal to 567px
+
+.col-md				medium devices where width greather than or equal to 768px.
+
+.col-lg	  			Large devices where width is 992px.
+
+.col-xl				Extra large devices where width is greater than 1200px.
+
+
+
+Syntax:-
+======
+  
+<div class="col-sm-3">Some Text</div>
+<div class="col-lg-3">Some Text</div>
+
+Bootstrap Text colors
+=====================
+
+The pre-defined classes for text colors are 
+1) text-success
+2) text-primary
+3) text-danger
+4) text-secondary
+5) text-muted
+6) text-dark
+7) text-dark-50
+8) text-white
+9) text-white-50
+
+Bootstrap Backgound color
+=========================
+
+The pre-defined class used for background colors are similar to text colors but defined with the prefix bg they are:-
+1) bg-sucess
+2) bg-primary
+3) bg-danger
+4) bg-secondary
+5) bg-dark
+6) bg-light
+7) bg-info
+8) bg-warning
+
+Syntax:-
+======
+
+<div class="bg-success text-white-50">Success</div>
+<div class="bg-danger text-white">Danger</div>
+<div class="text-warning">Warning</div>
+
+Bootstrap Tables:-
+================
+
+Bootstrap provides several pre-defined classes that are used to present tables in UI with formats
+
+Table Styles:
+============
+
+Class Name 
+==========
+
+1) table
+2) table-bordeless
+3) table-borderless
+4) table-stripped
+5) table -hover
+
+Syntax:-
+= =====
+
+   <table class="table table-hover">
+   <table class="table-stripped">
+
+Table Colors:-
+============
+
+Class Name
+==========
+
+1) table-succes
+2) table-danger
+3) table-primary
+4) table-secondary
+5) table-danger
+6) table-info
+7) table-warning
+8) table-dark
+
+Syntax:-
+======
+
+  <table class="table table-hover table-primary text-white">
+  <thread class="table-info">
+  <tbody class="table-warning">
+  <tr class="table-dark">
+
+Table Responsive:-
+================
+
+Class Name
+==========
+
+1) table-responsive
+2) table-responsive-sm
+3) table-responsive-md
+4) table-responsive-lg
+5) table-responsive-xl
+
+Syntax:-
+======
+  <div class="table-responsive">
+    <table classs="table table-hover">
+    </table>
+  <div>
+
+
+Bootstrap Buttons
+=================
+
+1) Button Class
+   btn                 - Applies a button style
+
+2) Button Colors
+   btn-primary
+   btn-secondary
+   btn-success
+   btn-daanger
+   btn-info
+   btn-warning
+   btn-dark
+
+3) Button Outlines Color
+   btn-outline-primary
+   btn-outline-success etc..
+   
+4) Button size
+   btn-sm
+   btn-lg
+
+5) Responsive Button
+   btn
+   btn-block
+   
+6) Button Group 
+   btn-group
+   btn-group-vertical
+   
+7) Button Toolbar
+   btn-toolbar
+   
+Ex- Bootstrap Button
+
+</head>
+ <body>
+   <div class="container">
+    <dl>
+       <dt>Button Solid Colors</dt>
+       <dd>
+       <button class="btn btn-success">Success</button>
+       </dd>
+       <dt>Button Outline Colors</dt>
+       <dd>
+          <button class="btn btn-outline-success">Success</button>
+          <button class="btn btn-outline-danger">Danger</button>
+          <button class="btn btn-primary-sm">Small Button</button>
+          <button class="btn btn-primary-lg">Large Button</button>
+          <button class="btn btn-primary">Normal Button</button>
+          <button class="btn btn-primary- btn-block">Block Button</button>
+       </dd>
+    </div>
+     <dt>Button Group Vertical</dt>
+       <div class="btn-toolbar bg-primary text-justify">
+           <button class="btn btn-primary">Home</button>
+           <button class="btn btn-primary">About</button>
+           <button class="btn btn-primary">Contact</button>
+  </div>
+
+  Note:- You can apply the Bootstrap button classes to <a> anchor element
+
+  Syntax:-
+   <a href="#" class="btn btn-primary">Home</a>
+
+   Bootstrap Card
+   ==============
+
+   Card is a container used to organise containts in a row or column style the cards are defined with several section which are specified by using the following classes.
+
+   .card
+   .card-header
+   .card-body
+   .card-footer
+   .card-title
+   .card-subtitle
+   .card-text
+   .card-link
+   .card-img-top
+   .card-deck
+   .card-img
+   .card-img-overlay
+   .card-coloums
+   .card-group
+
+
+   <head>
+     <!--link bootstarp.css-->
+</head>
+<body>
+    <div class="container"></div>
+      <div class="form-group bg-info text-center"></div>
+        <h1>NareshIT!Hyderbad</h1>
+        <div class="form-group"> </div>
+        <div class="card-img-top" src=".../images/ui.png" width="200"></div>
+        <div class="card-body">
+            <h5 class="card-title">UI Technologies</h5>
+            <h6 class="card-subtitle">HTML</h6>
+             <p class="card-text text-justify">
+                </p>
+        </div>
+        <div class="card-footer">
+             <a class="btn btn-primary"
+        </div>
+
+    </body> 
+
+    Ex-Card in Shopping
+
+    <div class="card-deck">
+      <div class="card-header">
+         <div clss="card-header">
+             <h2>Samsung</h2>
+         </div>" height="200"></div>
+            <div class="card-footer">
+                <h2>&8377;45000/-<h2>
+                <input type="number" min="1" masx="4" value="1">
+                      <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                  </div>
+                  

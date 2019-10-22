@@ -1,0 +1,65 @@
+Bootstrap Drop-down list
+========================
+1) A Dropdown list can be designed in bootsrap by using set of pre-defined classes you have to use the drop down from bootstrap only to handle navigation
+2) To use a drop-down for subimtting form later always use the form select element.
+3) The classes that are usedfor defining dropdown are:-
+
+ClassName                                 Description
+================================================================================
+
+1) .dropdown                       It specifies dropdown container.
+ 
+2) .dropdown-toggle                It specifies dropdown toggle button.
+
+3) .dropdown-menu                  It specifices dropdown menu
+
+4) .dropdown-item                  It specifies dropdown menu item.
+
+5) .dropdown-divider               It adds a dropdown list seperator for items.
+
+
+Note: Dropdown requires a JQuery bootsrap bundle to handle interaction.
+
+Syntax:-
+  <div class="dropdown">
+   <button class="dropdown-toggle">Menu Button</button>
+   <div class="dropdown-menu">
+      <a class="dropdown-item">Text</a>
+   </div>
+   </div>
+
+Example:-Dropdown for Navigation
+  
+1) Install JQuery for you project
+      C:\Flipkart>npn install JQuery
+
+2) Add new Html page
+          "home.html"
+
+<head><title>DropDown</title>
+     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.cc">
+     <script src="../node_modules/jquery/dist/jquery.js">
+     </script>
+          <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+     </head>
+     <body>
+         <div class="container">
+           <h2>Choose Navigation</h2>
+           <div class="dropdown">  
+            <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" id="dropdownclick" data-toggle" id="dropdown">Selec Navigation</button>
+                <div class="dropdown-menu  bg-primary text-white">       
+                <a href="#" class="dropdown-item">Home</a>
+                <a href="#" class="dropdown-item">About</a>
+                <a href="#" class="dropdown-item">Conatact</a>
+                         <div class="dropdown-divider"></div>
+                <a href="login.html" target="frameBody" class="dropdown-item">Login</a>
+                </div>
+                </div>
+                </div>
+                <div>
+                   <iframe name="frameBody" style="border-style:none;" width="600" height="400><iframe>
+                      </div>
+                     </body>
+          
+                
